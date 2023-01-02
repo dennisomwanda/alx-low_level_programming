@@ -2,10 +2,12 @@
 
 /**
  * main - print _putchar
- * is written by dennis
- * Return: 0
+ * 
+ * Return: Always 0 (success)
  */
+
 int main(void)
+
 {
 	_putchar("_");
 	_putchar("p");
@@ -16,5 +18,6 @@ int main(void)
 	_putchar("a");
 	_putchar("r");
 	_putchar("\n");
+
 	return (0);
 }
