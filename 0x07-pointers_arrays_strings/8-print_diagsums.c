@@ -1,26 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_diagsums - Entry point
- * @a: The matrix of integers.
- * @size: The size of the matrix.
+ * print_chessboard - Entry point
+ * @a: array
+ * Return: Always 0 (Success)
  */
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int index, sum1 = 0, sum2 = 0;
+	int i;
+	int j;
 
-	for (index = 0; index < size; index++)
+	for (i = 0; i < 8; i++)
 	{
-		sum1 += a[index];
-		a += size;
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
+		_putchar('\n');
 	}
-	a -= size;
-
-	for (index = 0; index < size; index++)
-	{
-		sum2 += a[index];
-		a -= size;
-	}
-		printf("%d, %d\n", sum1, sum2)
 }
